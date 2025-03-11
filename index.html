@@ -4,70 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="/src/imgs/formIcon.png">
     <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/chooseForm.css">
+    <link rel="stylesheet" href="/src/styles/commentArea.css">
+    <link rel="stylesheet" href="/src/styles/inputForm.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>HTML Activity 4</h1>
-    </header>
     
     <div class="mainContainer">
-
         <h3>Please fill this survey form</h3>
-        <form action="">
+        <form action="" id="surveyForm">
 
             <div class="inputForm">
-                <label for="">First Name:</label>
-                <input type="text" name="" id="">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" required>
     
-                <label for="">MI:</label>
-                <input type="text" name="" id="">
+                <label for="mi">MI:</label>
+                <input type="text" name="mi" id="mi" required>
     
-                <label for="">Last Name:</label>
-                <input type="text" name="" id="">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" required>
     
-                <label for="">City:</label>
-                <input type="text" name="" id="">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" required>
     
-                <label for="">State:</label>
-                <input type="text" name="" id="">
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" required>
     
-                <label for="">Zip Code:</label>
-                <input type="text" name="" id="">
+                <label for="zipCode">Zip Code:</label>
+                <input type="text" name="zipCode" id="zipCode" required>
             </div>
 
             <div class="chooseForm">
                 <h4>Choose a Sport:</h4>
-                <input type="checkbox">
-                <label for="">Basketball</label>
+                <input type="checkbox" name="sports" id="basketball" value="Basketball">
+                <label for="basketball">Basketball</label>
 
-                <input type="checkbox">
-                <label for="">Football</label>
+                <input type="checkbox" name="sports" id="football" value="Football">
+                <label for="football">Football</label>
 
-                <input type="checkbox">
-                <label for="">Hockey</label>
+                <input type="checkbox" name="sports" id="hockey" value="Hockey">
+                <label for="hockey">Hockey</label>
 
                 <h4>Choose a Year:</h4>
+                <input type="radio" name="year" id="freshman" value="Freshman">
+                <label for="freshman">Freshman</label>
 
-                <input type="radio">
-                <label for="">Freshman</label>
+                <input type="radio" name="year" id="sophomore" value="Sophomore">
+                <label for="sophomore">Sophomore</label>
 
-                <input type="radio">
-                <label for="">Sophomore</label>
+                <input type="radio" name="year" id="junior" value="Junior">
+                <label for="junior">Junior</label>
 
-                <input type="radio">
-                <label for="">Junior</label>
-
-                <input type="radio">
-                <label for="">Senior</label>
+                <input type="radio" name="year" id="senior" value="Senior">
+                <label for="senior">Senior</label>
 
                 <h4>Choose your favorite food:</h4>
-                <select>
-                    <option value="">Chips</option>
-                    <option value="">Pizza</option>
-                    <option value="">Nachos</option>
+                <select name="food" id="food">
+                    <option value="Chips">Chips</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Nachos">Nachos</option>
                 </select>
             </div>
             
